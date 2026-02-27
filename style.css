@@ -371,4 +371,95 @@ footer .menu ul li a:hover {
 i[data-lucide] {
     display: block;
     margin: 0 auto 10px;
+
+}
+/* 📱 RESPONSIVE TABLETTE */
+
+@media screen and (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 120px 40px 60px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    section {
+        padding: 80px 40px;
+    }
+
+    header.navbar {
+        padding: 0 20px;
+    }
+}
+
+
+
+/* 📱 RESPONSIVE MOBILE */
+@media screen and (max-width: 768px) {
+
+    /* NAVBAR */
+    header.navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 120px 20px 60px;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 60px 20px;
+    }
+
+    .part-4 {
+        padding: 60px 20px;
+    }
+
+    /* GRID */
+    .about-grid,
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FORM */
+    .part-4 form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* BUTTON */
+    .btn-start {
+        width: 100%;
+        padding: 14px;
+    }
 }
