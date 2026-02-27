@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rho</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <div class="logo">
+        <img src="RHO.png" alt="Logo Rho">
+        <h2>rho</h2>
+        <h4>multi-service</h4>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#part-1">Home</a></li>
+            <li><a href="#part-2">About</a></li>
+            <li><a href="#part-3">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <p class="badge">Développeur en formation | Passionné de technologie | Futur expert polyvalent en informatique</p>
+        <h1>Futur informaticien <span>polyvalent</span> et passionné</h1>
+        <p>
+            Étudiant en 1ère année d’Informatique et Développement d’Applications (IDA),
+            je me forme pour devenir un expert capable de maîtriser plusieurs domaines
+            de l’informatique : développement, réseaux, cybersécurité et systèmes.
+        </p>
+        <button class="btn-start" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Me contacter</button>
+    </div>
+    <div class="hero-image">
+        <img src="img.png" alt="Photo Rho">
+    </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="part-1" class="part-1">
+    <span class="line-badge">À PROPOS DE MOI</span>
+    <p>
+        Je suis un étudiant en première année IDA, passionné par l’univers du numérique
+        et les technologies innovantes. Curieux, créatif et déterminé,
+        je développe chaque jour mes compétences en programmation et en systèmes informatiques.
+        Mon objectif est de devenir un informaticien complet et polyvalent,
+        capable d’intervenir aussi bien dans le développement web que dans les réseaux,
+        la cybersécurité et la configuration de matériel électronique.
+    </p>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="part-2" class="part-2">
+    <span class="line-badge">Mes compétences</span>
+    <h2>Qu'est ce que je sais faire ?</h2>
+    <div class="about-grid">
+        <div class="about-card">
+            <i data-lucide="code"></i>
+            <h3>Langages</h3>
+            <p>Python, PHP, Kotlin, C, JavaScript</p>
+        </div>
+        <div class="about-card">
+            <i data-lucide="database"></i>
+            <h3>Bases de données</h3>
+            <p>SQL et systèmes relationnels</p>
+        </div>
+        <div class="about-card">
+            <i data-lucide="monitor"></i>
+            <h3>Développement</h3>
+            <p>Création de sites web modernes et dynamiques</p>
+        </div>
+        <div class="about-card">
+            <i data-lucide="wifi"></i>
+            <h3>Réseaux</h3>
+            <p>Configuration et administration de base</p>
+        </div>
+        <div class="about-card">
+            <i data-lucide="shield"></i>
+            <h3>Cybersécurité</h3>
+            <p>Compréhension des systèmes et sécurité informatique</p>
+        </div>
+        <div class="about-card">
+            <i data-lucide="cpu"></i>
+            <h3>Matériel</h3>
+            <p>Configuration et optimisation de matériel électronique</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="part-3" class="part-3">
+    <span class="line-badge">CE QU'ON FAIT</span>
+    <h2>Nos activités</h2>
+    <div class="activity-grid">
+        <div class="act-card">
+            <h3>Programmation & Langages</h3>
+            <p>Projets et exercices en Python, PHP, Kotlin, C et JavaScript.</p>
+        </div>
+        <div class="act-card">
+            <h3>Bases de données</h3>
+            <p>Manipulation de SQL et systèmes relationnels pour gérer vos données.</p>
+        </div>
+        <div class="act-card">
+            <h3>Développement Web</h3>
+            <p>Création de sites web modernes, responsives et interactifs.</p>
+        </div>
+        <div class="act-card">
+            <h3>Réseaux & Cybersécurité</h3>
+            <p>Configuration réseau et bonnes pratiques de sécurité informatique.</p>
+        </div>
+        <div class="act-card">
+            <h3>Matériel & Optimisation</h3>
+            <p>Montage, configuration et optimisation de matériel électronique.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="part-4">
+    <span class="line-badge">CONTACTEZ-MOI</span>
+    <h2>Envoyez-moi un message</h2>
+    <p>Vous pouvez me contacter directement en remplissant ce formulaire :</p>
+    <form action="COMMITMENT.php" method="post">
+        <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="nom" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Objet :</label>
+            <input type="text" id="subject" name="objet" placeholder="Sujet du message" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+        </div>
+        <button type="submit" name="submit">Envoyer</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Rho - Tous droits réservés - by asnomelo</p>
+    <div class="menu">
+        <ul>
+            <li><a href="#part-1">Home</a></li>
+            <li><a href="#part-2">About</a></li>
+            <li><a href="#part-3">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
